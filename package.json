@@ -1,0 +1,27 @@
+{
+  "name": "practical-exam-billing",
+  "version": "1.0.0",
+  "description": "Backend layer to the billing system for practicla exams.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yoo-Nyx/practical-exam-billing.git"
+  },
+  "author": "Nisha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yoo-Nyx/practical-exam-billing/issues"
+  },
+  "homepage": "https://github.com/Yoo-Nyx/practical-exam-billing#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-postgres": "^0.6.2",
+    "nodemon": "^2.0.22",
+    "pg": "^8.10.0"
+  }
+}

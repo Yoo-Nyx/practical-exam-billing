@@ -1,0 +1,10 @@
+
+#To Reset Primary Key to 1 after deleting all records
+
+CREATE OR REPLACE FUNCTION reset_serial_column() RETURNS VOID AS $$
+BEGIN
+    DELETE FROM staff_details;
+  -- Reset the serial column to 1
+  PERFORM setval(pg_get_serial_sequence('staff_details', 'staff_id'), 1, false);
+END;
+$$ LANGUAGE plpgsql;
